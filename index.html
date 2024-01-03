@@ -22,20 +22,26 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select id="selDataset">
+          </select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <div id="sample-metadata" class="panel-body">
+            <div id="demo_id"><p>id: data</p></div>
+            <div id="demo_eth"><p>ethnicity: data</p></div>
+            <div id="demo_gender"><p>gender: data</p></div>
+            <div id="demo_age"><p>age: data</p></div>
+            <div id="demo_loc"><p>location: data</p></div>
+            <div id="demo_bb"><p>bbtype: data</p></div>
+            <div id="demo_wfreq"><p>wfreq: data</p></div>
+          </div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-10">
         <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
       </div>
     </div>
     <div class="row">
@@ -44,11 +50,10 @@
       </div>
     </div>
   </div>
-
+  
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="./static/js/app.js"></script>
-  <script src="./static/js/bonus.js"></script>
 
 </body>
 
